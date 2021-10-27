@@ -16,6 +16,8 @@
     <properties>
         <java.version>11</java.version>
         <testcontainers.version>1.15.1</testcontainers.version>
+        <maven.compiler.source>11</maven.compiler.source>
+    		<maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -69,6 +71,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${project.parent.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>
